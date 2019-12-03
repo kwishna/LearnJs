@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Title Is Nothing Ra</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+<!--        <script src="manage.js"></script>-->
+        <style>
+            [name='message'] {
+                width: 300px;
+                height: 200px;
+            }
+            
+            [name='name'] {
+                width: 300px;
+            }
+            
+            .form{
+                 margin-left : 25%;
+                 margin-right: 25%
+            }
+        </style>
+<!--        <script>
+           function validateTheFrom(){
+                 var data = document.forms['messageForm']['message'].value;
+                 var name = document.forms['messageForm']['name'].value;
+     
+                 if(name == ""){
+                     alert('You missed To fill your name')
+                     return false;
+                 }
+            }   
+        </script>-->
+    </head>
+    <body class="container">
+        <div>
+            <div>
+                <h1 class="form">Welcome Guest!</h1>
+            </div>
+            <div class="form">
+                <form action="/sms" method="POST" name="messageForm" onsubmit="return validateTheFrom();">
+                    <fieldset>
+                        <legend>box</legend>
+                        <span>Enter Your Name : </span>
+                        <input type="text" name="name" style="display: block;"/>
+                        <hr/>
+                        <textarea name="message" style="display: block;" placeholder="enter your message here"></textarea>
+                        <input type="submit"/>
+                    </fieldset>
+                    
+                </form>
+                
+            </div>
+        </div>
+         <script type="text/javascript" src='./js/manage.js'></script>
+    </body>
+</html>
